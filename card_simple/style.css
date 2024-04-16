@@ -1,3 +1,99 @@
-*{
+* {
     box-sizing: border-box;
+    margin: 0; 
+    font-family: "Fira Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(26, 0, 43); /* space blue violet */
+    padding: 0;
+    line-height: normal;
+}
+
+#wrapper {
+}
+
+.card {
+    /* height: 400px; */
+    width: 400px;
+    max-width: 350px;
+    min-height: 400px;
+    background-color: rgb(255, 255, 240);
+    border-radius: 15px;
+    padding: 12px;
+}
+
+.card-content {
+    border: 3px solid #222;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+
+}
+
+.card-title {
+    grid-column: span 3;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-image-wrapper {
+    width: 100%;
+}
+
+.card-content-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: .5em; 
+    gap: 1em; 
+    width: 100%;
+}
+
+.item-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-wrapper-large {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+.item-headline {
+    font-weight: 700;
+}
+
+
+
+.rocket-image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+.card-header {
+    padding: .5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rocket-info {
+    grid-column: span 3;
+}
+
+p {
+    padding:0; 
+    margin:0
 }
